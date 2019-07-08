@@ -1,0 +1,60 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  background-color: #202020;
+  width: 100vw;
+  height: 100vh;
+  
+  font-family: monospace;
+}
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.panel {
+  position: fixed;
+
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: 0.5s;
+
+  padding: 10px;
+  background-color: gray;
+  color: white;
+  z-index: 1;
+
+  text-align: center;
+  max-height: 80%;
+  overflow-y: auto;
+}
+
+.panel table {
+  width: 100%;
+  min-width: 350px;
+}
+
+.panel.top {
+  transform: translateX(-50%) translateY(-100%);
+}
+
+.panel button {
+  border: 1px solid rgb(95, 95, 184);
+  padding: 5px 10px;
+  background-color: rgb(48, 86, 175);
+  color: white;
+}
+
+.panel input {
+  border: 1px solid rgb(95, 95, 184);
+  padding: 5px 10px;
+  background-color: rgb(79, 107, 173);
+  color: white;
+  width: 50px;
+  text-align: center;
+}
